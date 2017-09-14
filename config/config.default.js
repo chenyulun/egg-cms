@@ -14,6 +14,12 @@ module.exports = appInfo => {
     url: 'mongodb://localhost/cms',
     options: {},
   };
-
+  config.security = {
+    domainWhiteList: [ 'https://bank-static-stg.pingan.com.cn' ],
+  };
+  config.middleware = [ 'errorHandler' ];
+  config.errorHandler = {
+    match: '*',
+  };
   return config;
 };
