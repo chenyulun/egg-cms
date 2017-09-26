@@ -17,4 +17,8 @@ module.exports = {
   validate: {
     package: 'egg-validate',
   },
+  oauth2Server: {
+    enable: true,
+    package: 'egg-oauth2-server',
+  },
 };

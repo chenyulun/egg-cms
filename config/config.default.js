@@ -15,11 +15,17 @@ module.exports = appInfo => {
     options: {},
   };
   config.security = {
+    csrf: {
+      enable: false,
+    },
     domainWhiteList: [ 'https://bank-static-stg.pingan.com.cn' ],
   };
-  config.middleware = [ 'errorHandler' ];
+
+  config.middleware = [ 'response', 'errorHandler' ];
+
   config.errorHandler = {
     match: '*',
   };
+
   return config;
 };

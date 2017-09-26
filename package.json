@@ -7,6 +7,7 @@
     "egg": "^1.7.0",
     "egg-cors": "^1.2.0",
     "egg-mongoose": "^2.1.0",
+    "egg-oauth2-server": "github:Azard/egg-oauth2-server",
     "egg-scripts": "^1.1.1",
     "egg-validate": "^1.0.0"
   },
@@ -18,6 +19,7 @@
     "egg-mock": "^3.10.0",
     "eslint": "^4.5.0",
     "eslint-config-egg": "^5.1.0",
+    "nconf": "^0.8.4",
     "webstorm-disable-index": "^1.2.0"
   },
   "engines": {
